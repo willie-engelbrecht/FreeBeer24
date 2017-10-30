@@ -211,6 +211,23 @@ Password: admin
 
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaSelectDataSources.JPG?raw=true)
 
+* Configure your data source:
+![]https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaConfigureDataSource.JPG?raw=true
+
+```
+Name: Bitcoin
+Type: ElasticSearch
+URL: http://localhost:9200
+Index Name: bitstamp-*
+Time field name: timestamp   (remove the @)
+Version 5.x
+```
+
+* Click on Save & Test. You should see:
+
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaSaveAndTest.JPG?raw=true)
+
+
 
 ---
 ### Other commands
