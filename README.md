@@ -216,7 +216,7 @@ Password: admin
 
 ```
 Name: Bitcoin
-Type: ElasticSearch
+Type: Elasticsearch
 URL: http://localhost:9200
 Index Name: bitstamp-*
 Time field name: timestamp   (remove the @)
@@ -226,6 +226,23 @@ Version 5.x
 * Click on Save & Test. You should see:
 
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaSaveAndTest.JPG?raw=true)
+
+
+* Create a new Dashboard: 
+
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaCreateNewDashboard.JPG?raw=true)
+
+* Select "Graph" as your dashboard type:
+
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaDashboardSelectGraph.JPG?raw=true)
+
+* Click on "Panel Title" to bring up the menu, then click on "Edit":
+
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaClickPanelToEdit.JPG?raw=true)
+
+* Select "Bitcoin" as your data source:
+
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaSelectBitcoinAsDatasource.JPG?raw=true)
 
 
 
