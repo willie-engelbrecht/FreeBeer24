@@ -70,7 +70,7 @@ Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 * Register on Slack: https://slack.com/  and install the "incoming-webhook" app. This will give you a "webhook-URL" that you can use in NiFi
 
 * Update your twitter processor to have the new keys and access token:
-<screenshot here>
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/TwitterSetKeySecret.jpg?raw=true)
 
 * Update your slack processor to have the new webhook-URL:
 <screenshot here>
