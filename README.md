@@ -38,8 +38,8 @@ systemctl start grafana-server
 ```
 
 Browse to: http://<ip.of.your.machine>:3000/login
-Username: admin
-Password: admin
+* Username: admin
+* Password: admin
 
 ##### Download and install Apache NiFi: https://nifi.apache.org/download.html
 ```bash
