@@ -141,6 +141,20 @@ curl -s -XPUT http://localhost:9200/important_locations -d '
 
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/KibanaCreateNewIndexPattern.JPG?raw=true)
 
+* On the menu, click "Visualize", then "Create a visualization", then "Coordinate Map":
+
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/KibanaNewVisualization.JPG?raw=true)
+
+* Select your existing index (in this case, "important_* "):
+
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/KibanaSelectExistingIndexToVisualize.JPG?raw=true)
+
+* Click on Geohash and set your Field to "location", then click the triangle/play button. You should see:
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/KibanaFinalVisualizationStep.JPG?raw=true)
+
+
+
+---
 # For the Bitcoin demo:
 # Import the Bitcoin.xml template in NiFi
 # Set your SSL context in the GetHTTP processor
