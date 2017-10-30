@@ -1,10 +1,10 @@
 ## FreeBeer24
 Step-by-step guide how to reproduce the NiFi demo presented at FreeBeer24
 
-## Prerequisites:
-# Perform the following commands as the root user, or use sudo. 
-# The steps below requires a RHEL 7 or CentOS 7 system. 
-# Make sure you have java installed: 
+# Prerequisites:
+* Perform the following commands as the root user, or use sudo. 
+* The steps below requires a RHEL 7 or CentOS 7 system. 
+* Make sure you have java installed: 
 [root@nifi-demo-0 ~]# java -version
 openjdk version "1.8.0_131"
 OpenJDK Runtime Environment (build 1.8.0_131-b12)
