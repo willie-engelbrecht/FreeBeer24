@@ -1,5 +1,5 @@
 # FreeBeer24
-Step-by-step guide how to reproduce the NiFi demo presented at FreeBeer24 [Website](http://www.freebeersessions.co.za/event/16-november-2017-joburg)
+Step-by-step guide how to reproduce the NiFi demo presented at [FreeBeer24](http://www.freebeersessions.co.za/event/16-november-2017-joburg)
 
 ## Prerequisites:
 * Perform the following commands as the root user, or use sudo. 
