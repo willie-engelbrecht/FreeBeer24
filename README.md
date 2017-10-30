@@ -63,7 +63,7 @@ Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 
 
 ### For the Twitter -> Slack demo:
-* Import the TwitterToSlack.xml template in NiFi
+* Import the [TwitterToSlack.xml](https://raw.githubusercontent.com/willie-engelbrecht/FreeBeer24/master/templates/TwitterToSlack.xml) template in NiFi
 <screenshot here>
 
 * Go to: https://apps.twitter.com/  and register an app to get to your secret keys and access token
