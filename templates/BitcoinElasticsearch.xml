@@ -1,0 +1,620 @@
+<?xml version="1.0" ?>
+<template encoding-version="1.1">
+  <description></description>
+  <groupId>6dd41218-015f-1000-828d-263751bcd134</groupId>
+  <name>BitcoinElasticsearch</name>
+  <snippet>
+    <processGroups>
+      <id>7c85ed76-8d16-3e9d-0000-000000000000</id>
+      <parentGroupId>3ad9e809-1441-3acb-0000-000000000000</parentGroupId>
+      <position>
+        <x>0.0</x>
+        <y>0.0</y>
+      </position>
+      <comments></comments>
+      <contents>
+        <connections>
+          <id>91003772-1f1c-335f-0000-000000000000</id>
+          <parentGroupId>7c85ed76-8d16-3e9d-0000-000000000000</parentGroupId>
+          <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+          <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+          <bends>
+            <x>999.04739047397</x>
+            <y>559.7425757671327</y>
+          </bends>
+          <bends>
+            <x>999.04739047397</x>
+            <y>609.7425757671327</y>
+          </bends>
+          <destination>
+            <groupId>7c85ed76-8d16-3e9d-0000-000000000000</groupId>
+            <id>7375f8de-f734-33c6-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </destination>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+          <labelIndex>1</labelIndex>
+          <name></name>
+          <selectedRelationships>retry</selectedRelationships>
+          <source>
+            <groupId>7c85ed76-8d16-3e9d-0000-000000000000</groupId>
+            <id>7375f8de-f734-33c6-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </source>
+          <zIndex>0</zIndex>
+        </connections>
+        <connections>
+          <id>410b1ecb-1939-30e8-0000-000000000000</id>
+          <parentGroupId>7c85ed76-8d16-3e9d-0000-000000000000</parentGroupId>
+          <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+          <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+          <destination>
+            <groupId>7c85ed76-8d16-3e9d-0000-000000000000</groupId>
+            <id>7375f8de-f734-33c6-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </destination>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+          <labelIndex>1</labelIndex>
+          <name></name>
+          <selectedRelationships>success</selectedRelationships>
+          <source>
+            <groupId>7c85ed76-8d16-3e9d-0000-000000000000</groupId>
+            <id>bf990f4c-020a-31b4-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </source>
+          <zIndex>0</zIndex>
+        </connections>
+        <connections>
+          <id>6180a4b5-ed99-3f7c-0000-000000000000</id>
+          <parentGroupId>7c85ed76-8d16-3e9d-0000-000000000000</parentGroupId>
+          <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+          <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+          <destination>
+            <groupId>7c85ed76-8d16-3e9d-0000-000000000000</groupId>
+            <id>bf990f4c-020a-31b4-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </destination>
+          <flowFileExpiration>0 sec</flowFileExpiration>
+          <labelIndex>1</labelIndex>
+          <name></name>
+          <selectedRelationships>success</selectedRelationships>
+          <source>
+            <groupId>7c85ed76-8d16-3e9d-0000-000000000000</groupId>
+            <id>44715932-bc92-3c1c-0000-000000000000</id>
+            <type>PROCESSOR</type>
+          </source>
+          <zIndex>0</zIndex>
+        </connections>
+        <controllerServices>
+          <id>59ba4431-d5b0-308c-0000-000000000000</id>
+          <parentGroupId>7c85ed76-8d16-3e9d-0000-000000000000</parentGroupId>
+          <bundle>
+            <artifact>nifi-ssl-context-service-nar</artifact>
+            <group>org.apache.nifi</group>
+            <version>1.4.0</version>
+          </bundle>
+          <comments></comments>
+          <descriptors>
+            <entry>
+              <key>Keystore Filename</key>
+              <value>
+                <name>Keystore Filename</name>
+              </value>
+            </entry>
+            <entry>
+              <key>Keystore Password</key>
+              <value>
+                <name>Keystore Password</name>
+              </value>
+            </entry>
+            <entry>
+              <key>key-password</key>
+              <value>
+                <name>key-password</name>
+              </value>
+            </entry>
+            <entry>
+              <key>Keystore Type</key>
+              <value>
+                <name>Keystore Type</name>
+              </value>
+            </entry>
+            <entry>
+              <key>Truststore Filename</key>
+              <value>
+                <name>Truststore Filename</name>
+              </value>
+            </entry>
+            <entry>
+              <key>Truststore Password</key>
+              <value>
+                <name>Truststore Password</name>
+              </value>
+            </entry>
+            <entry>
+              <key>Truststore Type</key>
+              <value>
+                <name>Truststore Type</name>
+              </value>
+            </entry>
+            <entry>
+              <key>SSL Protocol</key>
+              <value>
+                <name>SSL Protocol</name>
+              </value>
+            </entry>
+          </descriptors>
+          <name>StandardSSLContextService</name>
+          <persistsState>false</persistsState>
+          <properties>
+            <entry>
+              <key>Keystore Filename</key>
+            </entry>
+            <entry>
+              <key>Keystore Password</key>
+            </entry>
+            <entry>
+              <key>key-password</key>
+            </entry>
+            <entry>
+              <key>Keystore Type</key>
+            </entry>
+            <entry>
+              <key>Truststore Filename</key>
+              <value>/etc/pki/java/cacerts</value>
+            </entry>
+            <entry>
+              <key>Truststore Password</key>
+            </entry>
+            <entry>
+              <key>Truststore Type</key>
+              <value>JKS</value>
+            </entry>
+            <entry>
+              <key>SSL Protocol</key>
+            </entry>
+          </properties>
+          <state>ENABLED</state>
+          <type>org.apache.nifi.ssl.StandardSSLContextService</type>
+        </controllerServices>
+        <processors>
+          <id>bf990f4c-020a-31b4-0000-000000000000</id>
+          <parentGroupId>7c85ed76-8d16-3e9d-0000-000000000000</parentGroupId>
+          <position>
+            <x>544.04739047397</x>
+            <y>312.9102587290467</y>
+          </position>
+          <bundle>
+            <artifact>nifi-standard-nar</artifact>
+            <group>org.apache.nifi</group>
+            <version>1.4.0</version>
+          </bundle>
+          <config>
+            <bulletinLevel>WARN</bulletinLevel>
+            <comments></comments>
+            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+            <descriptors>
+              <entry>
+                <key>jolt-transform</key>
+                <value>
+                  <name>jolt-transform</name>
+                </value>
+              </entry>
+              <entry>
+                <key>jolt-custom-class</key>
+                <value>
+                  <name>jolt-custom-class</name>
+                </value>
+              </entry>
+              <entry>
+                <key>jolt-custom-modules</key>
+                <value>
+                  <name>jolt-custom-modules</name>
+                </value>
+              </entry>
+              <entry>
+                <key>jolt-spec</key>
+                <value>
+                  <name>jolt-spec</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Transform Cache Size</key>
+                <value>
+                  <name>Transform Cache Size</name>
+                </value>
+              </entry>
+            </descriptors>
+            <executionNode>ALL</executionNode>
+            <lossTolerant>false</lossTolerant>
+            <penaltyDuration>30 sec</penaltyDuration>
+            <properties>
+              <entry>
+                <key>jolt-transform</key>
+                <value>jolt-transform-shift</value>
+              </entry>
+              <entry>
+                <key>jolt-custom-class</key>
+              </entry>
+              <entry>
+                <key>jolt-custom-modules</key>
+              </entry>
+              <entry>
+                <key>jolt-spec</key>
+                <value>{
+  "timestamp" : "timestamp",
+  "last" : "last_trade"
+}</value>
+              </entry>
+              <entry>
+                <key>Transform Cache Size</key>
+                <value>1</value>
+              </entry>
+            </properties>
+            <runDurationMillis>0</runDurationMillis>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <yieldDuration>1 sec</yieldDuration>
+          </config>
+          <name>JoltTransformJSON</name>
+          <relationships>
+            <autoTerminate>true</autoTerminate>
+            <name>failure</name>
+          </relationships>
+          <relationships>
+            <autoTerminate>false</autoTerminate>
+            <name>success</name>
+          </relationships>
+          <state>RUNNING</state>
+          <style></style>
+          <type>org.apache.nifi.processors.standard.JoltTransformJSON</type>
+        </processors>
+        <processors>
+          <id>44715932-bc92-3c1c-0000-000000000000</id>
+          <parentGroupId>7c85ed76-8d16-3e9d-0000-000000000000</parentGroupId>
+          <position>
+            <x>542.8162503372513</x>
+            <y>98.77407162766033</y>
+          </position>
+          <bundle>
+            <artifact>nifi-standard-nar</artifact>
+            <group>org.apache.nifi</group>
+            <version>1.4.0</version>
+          </bundle>
+          <config>
+            <bulletinLevel>WARN</bulletinLevel>
+            <comments></comments>
+            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+            <descriptors>
+              <entry>
+                <key>URL</key>
+                <value>
+                  <name>URL</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Filename</key>
+                <value>
+                  <name>Filename</name>
+                </value>
+              </entry>
+              <entry>
+                <key>SSL Context Service</key>
+                <value>
+                  <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+                  <name>SSL Context Service</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Username</key>
+                <value>
+                  <name>Username</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Password</key>
+                <value>
+                  <name>Password</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Connection Timeout</key>
+                <value>
+                  <name>Connection Timeout</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Data Timeout</key>
+                <value>
+                  <name>Data Timeout</name>
+                </value>
+              </entry>
+              <entry>
+                <key>User Agent</key>
+                <value>
+                  <name>User Agent</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Accept Content-Type</key>
+                <value>
+                  <name>Accept Content-Type</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Follow Redirects</key>
+                <value>
+                  <name>Follow Redirects</name>
+                </value>
+              </entry>
+              <entry>
+                <key>redirect-cookie-policy</key>
+                <value>
+                  <name>redirect-cookie-policy</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Proxy Host</key>
+                <value>
+                  <name>Proxy Host</name>
+                </value>
+              </entry>
+              <entry>
+                <key>Proxy Port</key>
+                <value>
+                  <name>Proxy Port</name>
+                </value>
+              </entry>
+            </descriptors>
+            <executionNode>ALL</executionNode>
+            <lossTolerant>false</lossTolerant>
+            <penaltyDuration>30 sec</penaltyDuration>
+            <properties>
+              <entry>
+                <key>URL</key>
+                <value>https://www.bitstamp.net/api/v2/ticker/btcusd/</value>
+              </entry>
+              <entry>
+                <key>Filename</key>
+                <value>bitstamp</value>
+              </entry>
+              <entry>
+                <key>SSL Context Service</key>
+                <value>59ba4431-d5b0-308c-0000-000000000000</value>
+              </entry>
+              <entry>
+                <key>Username</key>
+              </entry>
+              <entry>
+                <key>Password</key>
+              </entry>
+              <entry>
+                <key>Connection Timeout</key>
+                <value>30 sec</value>
+              </entry>
+              <entry>
+                <key>Data Timeout</key>
+                <value>30 sec</value>
+              </entry>
+              <entry>
+                <key>User Agent</key>
+              </entry>
+              <entry>
+                <key>Accept Content-Type</key>
+              </entry>
+              <entry>
+                <key>Follow Redirects</key>
+                <value>false</value>
+              </entry>
+              <entry>
+                <key>redirect-cookie-policy</key>
+                <value>default</value>
+              </entry>
+              <entry>
+                <key>Proxy Host</key>
+              </entry>
+              <entry>
+                <key>Proxy Port</key>
+              </entry>
+            </properties>
+            <runDurationMillis>0</runDurationMillis>
+            <schedulingPeriod>5 sec</schedulingPeriod>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <yieldDuration>1 sec</yieldDuration>
+          </config>
+          <name>GetHTTP</name>
+          <relationships>
+            <autoTerminate>false</autoTerminate>
+            <name>success</name>
+          </relationships>
+          <state>RUNNING</state>
+          <style></style>
+          <type>org.apache.nifi.processors.standard.GetHTTP</type>
+        </processors>
+        <processors>
+          <id>7375f8de-f734-33c6-0000-000000000000</id>
+          <parentGroupId>7c85ed76-8d16-3e9d-0000-000000000000</parentGroupId>
+          <position>
+            <x>544.04739047397</x>
+            <y>519.7425757671327</y>
+          </position>
+          <bundle>
+            <artifact>nifi-elasticsearch-5-nar</artifact>
+            <group>org.apache.nifi</group>
+            <version>1.4.0</version>
+          </bundle>
+          <config>
+            <bulletinLevel>WARN</bulletinLevel>
+            <comments></comments>
+            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+            <descriptors>
+              <entry>
+                <key>el5-cluster-name</key>
+                <value>
+                  <name>el5-cluster-name</name>
+                </value>
+              </entry>
+              <entry>
+                <key>el5-hosts</key>
+                <value>
+                  <name>el5-hosts</name>
+                </value>
+              </entry>
+              <entry>
+                <key>el5-ssl-context-service</key>
+                <value>
+                  <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+                  <name>el5-ssl-context-service</name>
+                </value>
+              </entry>
+              <entry>
+                <key>el5-xpack-location</key>
+                <value>
+                  <name>el5-xpack-location</name>
+                </value>
+              </entry>
+              <entry>
+                <key>el5-username</key>
+                <value>
+                  <name>el5-username</name>
+                </value>
+              </entry>
+              <entry>
+                <key>el5-password</key>
+                <value>
+                  <name>el5-password</name>
+                </value>
+              </entry>
+              <entry>
+                <key>el5-ping-timeout</key>
+                <value>
+                  <name>el5-ping-timeout</name>
+                </value>
+              </entry>
+              <entry>
+                <key>el5-sampler-interval</key>
+                <value>
+                  <name>el5-sampler-interval</name>
+                </value>
+              </entry>
+              <entry>
+                <key>el5-put-id-attribute</key>
+                <value>
+                  <name>el5-put-id-attribute</name>
+                </value>
+              </entry>
+              <entry>
+                <key>el5-put-index</key>
+                <value>
+                  <name>el5-put-index</name>
+                </value>
+              </entry>
+              <entry>
+                <key>el5-put-type</key>
+                <value>
+                  <name>el5-put-type</name>
+                </value>
+              </entry>
+              <entry>
+                <key>el5-charset</key>
+                <value>
+                  <name>el5-charset</name>
+                </value>
+              </entry>
+              <entry>
+                <key>el5-put-batch-size</key>
+                <value>
+                  <name>el5-put-batch-size</name>
+                </value>
+              </entry>
+              <entry>
+                <key>el5-put-index-op</key>
+                <value>
+                  <name>el5-put-index-op</name>
+                </value>
+              </entry>
+            </descriptors>
+            <executionNode>ALL</executionNode>
+            <lossTolerant>false</lossTolerant>
+            <penaltyDuration>30 sec</penaltyDuration>
+            <properties>
+              <entry>
+                <key>el5-cluster-name</key>
+                <value>elasticsearch</value>
+              </entry>
+              <entry>
+                <key>el5-hosts</key>
+                <value>localhost:9300</value>
+              </entry>
+              <entry>
+                <key>el5-ssl-context-service</key>
+              </entry>
+              <entry>
+                <key>el5-xpack-location</key>
+              </entry>
+              <entry>
+                <key>el5-username</key>
+              </entry>
+              <entry>
+                <key>el5-password</key>
+              </entry>
+              <entry>
+                <key>el5-ping-timeout</key>
+                <value>5s</value>
+              </entry>
+              <entry>
+                <key>el5-sampler-interval</key>
+                <value>5s</value>
+              </entry>
+              <entry>
+                <key>el5-put-id-attribute</key>
+                <value>uuid</value>
+              </entry>
+              <entry>
+                <key>el5-put-index</key>
+                <value>${filename}-${now():format("yyyy-MM-dd")}</value>
+              </entry>
+              <entry>
+                <key>el5-put-type</key>
+                <value>bitcoinquotes</value>
+              </entry>
+              <entry>
+                <key>el5-charset</key>
+                <value>UTF-8</value>
+              </entry>
+              <entry>
+                <key>el5-put-batch-size</key>
+                <value>100</value>
+              </entry>
+              <entry>
+                <key>el5-put-index-op</key>
+                <value>index</value>
+              </entry>
+            </properties>
+            <runDurationMillis>0</runDurationMillis>
+            <schedulingPeriod>0 sec</schedulingPeriod>
+            <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+            <yieldDuration>1 sec</yieldDuration>
+          </config>
+          <name>PutElasticsearch5</name>
+          <relationships>
+            <autoTerminate>true</autoTerminate>
+            <name>failure</name>
+          </relationships>
+          <relationships>
+            <autoTerminate>false</autoTerminate>
+            <name>retry</name>
+          </relationships>
+          <relationships>
+            <autoTerminate>true</autoTerminate>
+            <name>success</name>
+          </relationships>
+          <state>RUNNING</state>
+          <style></style>
+          <type>org.apache.nifi.processors.elasticsearch.PutElasticsearch5</type>
+        </processors>
+      </contents>
+      <name>Bitcoin</name>
+    </processGroups>
+  </snippet>
+  <timestamp>10/30/2017 21:13:01 SAST</timestamp>
+</template>
