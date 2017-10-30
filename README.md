@@ -207,8 +207,9 @@ Username: admin
 
 Password: admin
 
-# Create a DataSource:
+* Create a DataSource:
 
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaSelectDataSources.JPG?raw=true)
 
 
 ---
