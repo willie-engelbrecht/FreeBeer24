@@ -156,7 +156,7 @@ curl -s -XPUT http://localhost:9200/important_locations -d '
 
 ---
 ### For the Bitcoin demo:
-Import the [TailFileSSH.xml](https://raw.githubusercontent.com/willie-engelbrecht/FreeBeer24/master/templates/TailFileSSH.xml) template in NiFi:
+Import the [BitcoinElasticsearch.xml](https://raw.githubusercontent.com/willie-engelbrecht/FreeBeer24/master/templates/BitcoinElasticsearch.xml) template in NiFi:
 
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/SelectBitcoinTemplate.JPG?raw=true)
 
