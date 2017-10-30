@@ -51,6 +51,15 @@ tar xzvf nifi-1.4.0-bin.tar.gz -C /opt
 Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 
 ##### In NiFi, create a SSL context, to be used later:
+* From your GetHTTP processor, you click on "SSL Context Service":
+(https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/ConfigureSSLContext.JPG?raw=true)
+* Truststore password: changeit
+(https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/ConfigureSSLContextFromProcessor.JPG?raw=true)
+* Truststore Filename: /etc/pki/java/cacerts
+* Truststore Type: JKS
+(https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/ConfigureSSLContextSummary.JPG?raw=true)
+* Click Apply, then click on the thunderbolt icon to enable
+(https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/EnableSSLContext.JPG?raw=true)
 
 
 # For the Twitter -> Slack demo:
@@ -81,6 +90,7 @@ tar xzvf GeoLite2-City.tar.gz -C /opt
 <screenshot here>
 
 # Create the following in Elasticsearch:
+```bash
 curl -s -XPUT http://localhost:9200/important_locations -d '
 {
   "mappings": {
@@ -92,6 +102,7 @@ curl -s -XPUT http://localhost:9200/important_locations -d '
     }
   }
 }' | python -m json.tool
+```
 
 # Start all processors.
 <screenshot here>
@@ -103,6 +114,7 @@ curl -s -XPUT http://localhost:9200/important_locations -d '
 <screenshot here>
 
 # Create the following in Elasticsearch
+```bash
 curl -s -XPUT http://localhost:9200/_template/bitstamp_template_1?pretty -d '
 {
         "template" : "bitstamp-*",
@@ -131,6 +143,7 @@ curl -s -XPUT http://localhost:9200/_template/bitstamp_template_1?pretty -d '
                 }
         }
 }' | python -m json.tool
+```
 
 # Start all processors.
 <screenshot here>
@@ -147,12 +160,17 @@ Password: admin
 
 ###################### Other commands #########################
 # Elasticsearch, view all indexes:
+```bash
 curl -s -XGET 'http://localhost:9200/_cat/indices?v'
+```
 
 # Elasticsearch, delete an index:
+```bash
 curl -s -XDELETE 'http://localhost:9200/important_locations'
+```
 
 # Elasticsearch, view last inserted value:
+```bash
 curl -s -XGET 'localhost:9200/bitstamp-2017-10-30/_search' -d ' 
 {
   "query": {
@@ -167,3 +185,4 @@ curl -s -XGET 'localhost:9200/bitstamp-2017-10-30/_search' -d '
     }
   ]
 }'  | python -m json.tool
+```
