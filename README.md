@@ -62,20 +62,20 @@ Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/EnableSSLContext.JPG?raw=true)
 
 
-# For the Twitter -> Slack demo:
-# Import the TwitterToSlack.xml template in NiFi
+##### For the Twitter -> Slack demo:
+* Import the TwitterToSlack.xml template in NiFi
 <screenshot here>
 
-# Go to: https://apps.twitter.com/  and register an app to get to your secret keys and access token
-# Register on Slack: https://slack.com/  and install the "incoming-webhook" app. This will give you a "webhook-URL" that you can use in NiFi
+* Go to: https://apps.twitter.com/  and register an app to get to your secret keys and access token
+* Register on Slack: https://slack.com/  and install the "incoming-webhook" app. This will give you a "webhook-URL" that you can use in NiFi
 
-# Update your twitter processor to have the new keys and access token:
+* Update your twitter processor to have the new keys and access token:
 <screenshot here>
 
-# Update your slack processor to have the new webhook-URL:
+* Update your slack processor to have the new webhook-URL:
 <screenshot here>
 
-# Start all processors.
+* Start all processors.
 <screenshot here>
 
 
