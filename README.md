@@ -64,7 +64,11 @@ Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 
 ### For the Twitter -> Slack demo:
 * Import the [TwitterToSlack.xml](https://raw.githubusercontent.com/willie-engelbrecht/FreeBeer24/master/templates/TwitterToSlack.xml) template in NiFi
-<screenshot here>
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/UploadTemplateButton.jpg?raw=true)
+* Then click on the template button on the top menu:
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/CreateNewProcessGroupFromTemplate.jpg?raw=true)
+* Select which template to create a new process group from:
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/SelectWhichTemplateToCreateFrom.JPG?raw=true)
 
 * Go to: https://apps.twitter.com/  and register an app to get to your secret keys and access token
 * Register on Slack: https://slack.com/  and install the "incoming-webhook" app. This will give you a "webhook-URL" that you can use in NiFi
@@ -75,8 +79,10 @@ Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 * Update your slack processor to have the new webhook-URL:
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/SlackConfigureWebhookURL.jpg?raw=true)
 
-* Start all processors.
-<screenshot here>
+* Start all processors: Press Ctrl+a to select all components, then click on the "play" triangle: 
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/HitPlayButtonToStart.jpg?raw=true)
+
+* You'll know it's working when you can see some flows coming through:
 
 
 # For the TailFile -> Kibana demo:
