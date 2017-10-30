@@ -270,9 +270,11 @@ Current
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaStackingAndNullValue.JPG?raw=true)
 
 * Click on "Back to dashboard":
+
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaBackToDashboard.JPG?raw=true)
 
 * And you should see something like:
+
 ![]()
 
 
