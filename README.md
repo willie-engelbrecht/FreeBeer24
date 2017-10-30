@@ -73,7 +73,7 @@ Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/TwitterSetKeySecret.jpg?raw=true)
 
 * Update your slack processor to have the new webhook-URL:
-<screenshot here>
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/SlackConfigureWebhookURL.jpg?raw=true)
 
 * Start all processors.
 <screenshot here>
