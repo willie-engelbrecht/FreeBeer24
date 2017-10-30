@@ -200,9 +200,9 @@ curl -s -XPUT http://localhost:9200/_template/bitstamp_template_1?pretty -d '
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/BitcoinFlow.JPG?raw=true)
 
 * Browse to your Grafana instance:
-..* http://<ip.of.your.machine>:3000/login
-..* Username: admin
-..* Password: admin
+⋅⋅* http://<ip.of.your.machine>:3000/login
+⋅⋅* Username: admin
+⋅⋅* Password: admin
 
 * Create a DataSource:
 
