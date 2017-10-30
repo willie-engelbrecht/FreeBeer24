@@ -132,7 +132,14 @@ curl -s -XPUT http://localhost:9200/important_locations -d '
 * Start all processors:
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/AllProcessorsRunningForTailFileSSh.JPG?raw=true)
 
+* Browse to your Kibana instance: http://<ip.of.your.machine>:5601
 
+* Click on the "Management" option, then "Index Patterns", then "Create Index Pattern":
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/KibanaManagementIndexPatterns.JPG?raw=true)
+
+* Complete the textbox as "important_* ", let the screen autocomplete, then "Create"
+
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/KibanaCreateNewIndexPattern.JPG?raw=true)
 
 # For the Bitcoin demo:
 # Import the Bitcoin.xml template in NiFi
