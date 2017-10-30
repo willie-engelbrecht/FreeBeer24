@@ -213,7 +213,6 @@ Password: admin
 
 * Configure your data source:
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaConfigureDataSource.JPG?raw=true)
-
 ```
 Name: Bitcoin
 Type: Elasticsearch
@@ -247,13 +246,28 @@ Version 5.x
 * Build your query like: 
 
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaBuildYourQuery.JPG?raw=true)
-
 ```
 Metric: Average -> last_trade
 Group by: Date Histogram -> timestamp
 
 On the far right, set "Alias" to "Bitstamp"
 ```
+
+* Click on the "Legend" tab, and set your options as:
+
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaSetLegendOptions.JPG?raw=true)
+
+```
+As Table
+To the right
+Min
+Max
+Current
+```
+
+* Click on the "Display" tab, and set the "Null value" option to "connected":
+
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaStackingAndNullValue.JPG?raw=true)
 
 ---
 ### Other commands
