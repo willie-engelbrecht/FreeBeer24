@@ -19,7 +19,7 @@ systemctl enable elasticsearch
 systemctl start elasticsearch
 ```
 
-#####Download and install Kibana:
+##### Download and install Kibana:
 ```bash
 yum -y install https://artifacts.elastic.co/downloads/kibana/kibana-5.6.3-x86_64.rpm
 # Update the config file so that Kibana listens on all interfaces
@@ -28,26 +28,30 @@ systemctl enable kibana
 systemctl start kibana
 ```
 
-###### Browse to: http://<ip.of.your.machine>:5601
+Browse to: http://<ip.of.your.machine>:5601
 
-# Download and install Grafana: https://grafana.com/grafana/download
+##### Download and install Grafana: https://grafana.com/grafana/download
+```bash
 yum -y install https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-4.6.0-1.x86_64.rpm
 systemctl enable grafana-server
 systemctl start grafana-server
+```
 
-# Browse to: http://<ip.of.your.machine>:3000/login
+Browse to: http://<ip.of.your.machine>:3000/login
 Username: admin
 Password: admin
 
-# Download and install Apache NiFi: https://nifi.apache.org/download.html
+##### Download and install Apache NiFi: https://nifi.apache.org/download.html
+```bash
 wget http://apache.is.co.za/nifi/1.4.0/nifi-1.4.0-bin.tar.gz
 tar xzvf nifi-1.4.0-bin.tar.gz -C /opt
 /opt/nifi-1.4.0/bin/nifi.sh start
+```
 
-# Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
+Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 
-# Create a SSL context, to be used later
-# On the commandline, run the following command:
+##### Create a SSL context, to be used later
+##### On the commandline, run the following command:
 /etc/truststore.p12
 
 # For the Twitter -> Slack demo:
