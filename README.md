@@ -62,12 +62,18 @@ Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/EnableSSLContext.JPG?raw=true)
 
 
+---
 ### For the Twitter -> Slack demo:
-* Import the [TwitterToSlack.xml](https://raw.githubusercontent.com/willie-engelbrecht/FreeBeer24/master/templates/TwitterToSlack.xml) template in NiFi
+* Import the [TwitterToSlack.xml](https://raw.githubusercontent.com/willie-engelbrecht/FreeBeer24/master/templates/TwitterToSlack.xml) template in NiFi:
+
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/UploadTemplateButton.jpg?raw=true)
+
 * Then click on the template button on the top menu:
+
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/CreateNewProcessGroupFromTemplate.jpg?raw=true)
+
 * Select which template to create a new process group from:
+
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/SelectWhichTemplateToCreateFrom.JPG?raw=true)
 
 * Go to: https://apps.twitter.com/  and register an app to get to your secret keys and access token
