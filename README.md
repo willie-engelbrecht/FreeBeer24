@@ -50,7 +50,7 @@ tar xzvf nifi-1.4.0-bin.tar.gz -C /opt
 
 Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 
-##### In NiFi, create a SSL context, to be used later:
+### In NiFi, create a SSL context, to be used later:
 * From your GetHTTP processor, you click on "SSL Context Service":
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/ConfigureSSLContextFromProcessor.JPG?raw=true)
 * Truststore password: changeit
@@ -62,7 +62,7 @@ Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/EnableSSLContext.JPG?raw=true)
 
 
-#### For the Twitter -> Slack demo:
+### For the Twitter -> Slack demo:
 * Import the TwitterToSlack.xml template in NiFi
 <screenshot here>
 
