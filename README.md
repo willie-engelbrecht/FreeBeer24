@@ -62,6 +62,7 @@ Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/EnableSSLContext.JPG?raw=true)
 
 
+
 ---
 ### For the Twitter -> Slack demo:
 * Import the [TwitterToSlack.xml](https://raw.githubusercontent.com/willie-engelbrecht/FreeBeer24/master/templates/TwitterToSlack.xml) template in NiFi:
@@ -89,16 +90,21 @@ Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/HitPlayButtonToStart.jpg?raw=true)
 
 * You'll know it's working when you can see some flows coming through:
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/TwitterToSlackFlow.JPG?raw=true)
 
 
-# For the TailFile -> Kibana demo:
-# Import the TailFileSSH.xml template in NiFi
 
-# Download the Geo2Lite City database:
+---
+### For the TailFile -> Kibana demo:
+Import the [TailFileSSH.xml](https://raw.githubusercontent.com/willie-engelbrecht/FreeBeer24/master/templates/TailFileSSH.xml) template in NiFi:
+
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/SelectTailFaileSSHTemplate.JPG?raw=true)
+
+* Download the Geo2Lite City database:
 wget http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz
 tar xzvf GeoLite2-City.tar.gz -C /opt
 
-# Update the GeoEnrichIP processor, and point the MaxMind Database File property to: /opt/GeoLite2-City_20171003/GeoLite2-City.mmdb
+* Update the GeoEnrichIP processor, and point the MaxMind Database File property to: /opt/GeoLite2-City_20171003/GeoLite2-City.mmdb
 <screenshot here>
 
 # Create the following in Elasticsearch:
