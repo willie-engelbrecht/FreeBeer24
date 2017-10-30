@@ -212,7 +212,7 @@ Password: admin
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaSelectDataSources.JPG?raw=true)
 
 * Configure your data source:
-![]https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaConfigureDataSource.JPG?raw=true
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaConfigureDataSource.JPG?raw=true)
 
 ```
 Name: Bitcoin
