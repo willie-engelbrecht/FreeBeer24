@@ -28,7 +28,7 @@ systemctl enable kibana
 systemctl start kibana
 ```
 
-##### Browse to: http://<ip.of.your.machine>:5601
+###### Browse to: http://<ip.of.your.machine>:5601
 
 # Download and install Grafana: https://grafana.com/grafana/download
 yum -y install https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-4.6.0-1.x86_64.rpm
