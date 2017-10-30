@@ -52,14 +52,14 @@ Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 
 ##### In NiFi, create a SSL context, to be used later:
 * From your GetHTTP processor, you click on "SSL Context Service":
-(https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/ConfigureSSLContext.JPG?raw=true)
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/ConfigureSSLContext.JPG?raw=true)
 * Truststore password: changeit
-(https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/ConfigureSSLContextFromProcessor.JPG?raw=true)
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/ConfigureSSLContextFromProcessor.JPG?raw=true)
 * Truststore Filename: /etc/pki/java/cacerts
 * Truststore Type: JKS
-(https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/ConfigureSSLContextSummary.JPG?raw=true)
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/ConfigureSSLContextSummary.JPG?raw=true)
 * Click Apply, then click on the thunderbolt icon to enable
-(https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/EnableSSLContext.JPG?raw=true)
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/EnableSSLContext.JPG?raw=true)
 
 
 # For the Twitter -> Slack demo:
