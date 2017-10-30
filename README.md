@@ -240,11 +240,20 @@ Version 5.x
 
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaClickPanelToEdit.JPG?raw=true)
 
-* Select "Bitcoin" as your data source:
+* Select "Bitcoin" as your data source, then click "Add Query":
 
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaSelectBitcoinAsDatasource.JPG?raw=true)
 
+* Build your query like: 
 
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaBuildYourQuery.JPG?raw=true)
+
+```
+Metric: Average -> last_trade
+Group by: Date Histogram -> timestamp
+
+On the far right, set "Alias" to "Bitstamp"
+```
 
 ---
 ### Other commands
