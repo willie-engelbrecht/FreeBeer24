@@ -4,27 +4,31 @@ Step-by-step guide how to reproduce the NiFi demo presented at FreeBeer24
 ## Prerequisites:
 * Perform the following commands as the root user, or use sudo. 
 * The steps below requires a RHEL 7 or CentOS 7 system. 
-* Make sure you have java installed: 
+* Make sure you have java installed:
+```bash
 [root@nifi-demo-0 ~]# java -version
 openjdk version "1.8.0_131"
 OpenJDK Runtime Environment (build 1.8.0_131-b12)
 OpenJDK 64-Bit Server VM (build 25.131-b12, mixed mode)
+```
 
-###Download and install Elasticsearch: https://www.elastic.co/downloads/elasticsearch
+##### Download and install Elasticsearch: https://www.elastic.co/downloads/elasticsearch
 ```bash
 yum -y install https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.3.rpm
 systemctl enable elasticsearch
 systemctl start elasticsearch
 ```
 
-###Download and install Kibana:
+#####Download and install Kibana:
+```bash
 yum -y install https://artifacts.elastic.co/downloads/kibana/kibana-5.6.3-x86_64.rpm
 # Update the config file so that Kibana listens on all interfaces
 sed -i 's/#server.host: \"localhost\"/server.host: \"0.0.0.0\"/' /etc/kibana/kibana.yml
 systemctl enable kibana
 systemctl start kibana
+```
 
-# Browse to: http://<ip.of.your.machine>:5601
+##### Browse to: http://<ip.of.your.machine>:5601
 
 # Download and install Grafana: https://grafana.com/grafana/download
 yum -y install https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-4.6.0-1.x86_64.rpm
