@@ -97,7 +97,7 @@ Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 
 ---
 ### For the TailFile -> Kibana demo:
-Import the [TailFileSSH.xml](https://raw.githubusercontent.com/willie-engelbrecht/FreeBeer24/master/templates/TailFileSSH.xml) template in NiFi:
+* Import the [TailFileSSH.xml](https://raw.githubusercontent.com/willie-engelbrecht/FreeBeer24/master/templates/TailFileSSH.xml) template in NiFi:
 
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/SelectTailFaileSSHTemplate.JPG?raw=true)
 
@@ -155,12 +155,15 @@ curl -s -XPUT http://localhost:9200/important_locations -d '
 
 
 ---
-# For the Bitcoin demo:
-# Import the Bitcoin.xml template in NiFi
-# Set your SSL context in the GetHTTP processor
-<screenshot here>
+### For the Bitcoin demo:
+Import the [TailFileSSH.xml](https://raw.githubusercontent.com/willie-engelbrecht/FreeBeer24/master/templates/TailFileSSH.xml) template in NiFi:
 
-# Create the following in Elasticsearch
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/SelectBitcoinTemplate.JPG?raw=true)
+
+* Set your SSL context in the GetHTTP processor (configured earlier, or you can configure it from here):
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/EnableSSLContext.JPG?raw=true)
+
+* Create the following in Elasticsearch
 ```bash
 curl -s -XPUT http://localhost:9200/_template/bitstamp_template_1?pretty -d '
 {
@@ -192,10 +195,10 @@ curl -s -XPUT http://localhost:9200/_template/bitstamp_template_1?pretty -d '
 }' | python -m json.tool
 ```
 
-# Start all processors.
-<screenshot here>
+* Start all processors:
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/BitcoinFlow.JPG?raw=true)
 
-# Browse to your Grafana instance:
+* Browse to your Grafana instance:
 http://<ip.of.your.machine>:3000/login
 Username: admin
 Password: admin
@@ -204,19 +207,19 @@ Password: admin
 
 
 
-
-###################### Other commands #########################
-# Elasticsearch, view all indexes:
+---
+### Other commands
+* Elasticsearch, view all indexes:
 ```bash
 curl -s -XGET 'http://localhost:9200/_cat/indices?v'
 ```
 
-# Elasticsearch, delete an index:
+* Elasticsearch, delete an index:
 ```bash
 curl -s -XDELETE 'http://localhost:9200/important_locations'
 ```
 
-# Elasticsearch, view last inserted value:
+* Elasticsearch, view last inserted value:
 ```bash
 curl -s -XGET 'localhost:9200/bitstamp-2017-10-30/_search' -d ' 
 {
