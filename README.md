@@ -10,12 +10,14 @@ openjdk version "1.8.0_131"
 OpenJDK Runtime Environment (build 1.8.0_131-b12)
 OpenJDK 64-Bit Server VM (build 25.131-b12, mixed mode)
 
-# Download and install Elasticsearch: https://www.elastic.co/downloads/elasticsearch
+###Download and install Elasticsearch: https://www.elastic.co/downloads/elasticsearch
+```bash
 yum -y install https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.3.rpm
 systemctl enable elasticsearch
 systemctl start elasticsearch
+```
 
-# Download and install Kibana:
+###Download and install Kibana:
 yum -y install https://artifacts.elastic.co/downloads/kibana/kibana-5.6.3-x86_64.rpm
 # Update the config file so that Kibana listens on all interfaces
 sed -i 's/#server.host: \"localhost\"/server.host: \"0.0.0.0\"/' /etc/kibana/kibana.yml
