@@ -90,6 +90,7 @@ Wait a minute, then browse to http://<ip.of.your.machine>:8080/nifi
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/HitPlayButtonToStart.jpg?raw=true)
 
 * You'll know it's working when you can see some flows coming through:
+
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/TwitterToSlackFlow.JPG?raw=true)
 
 
@@ -101,13 +102,19 @@ Import the [TailFileSSH.xml](https://raw.githubusercontent.com/willie-engelbrech
 ![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/SelectTailFaileSSHTemplate.JPG?raw=true)
 
 * Download the Geo2Lite City database:
+```bash
 wget http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz
 tar xzvf GeoLite2-City.tar.gz -C /opt
+```
 
-* Update the GeoEnrichIP processor, and point the MaxMind Database File property to: /opt/GeoLite2-City_20171003/GeoLite2-City.mmdb
-<screenshot here>
+* Update the GeoEnrichIP processor, and point the MaxMind Database File property to:
+```bash
+/opt/GeoLite2-City_20171003/GeoLite2-City.mmdb
+```
+Example:
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/ConfigureGeoEnrichProcessor.JPG?raw=true)
 
-# Create the following in Elasticsearch:
+* Create the following in Elasticsearch:
 ```bash
 curl -s -XPUT http://localhost:9200/important_locations -d '
 {
@@ -122,8 +129,9 @@ curl -s -XPUT http://localhost:9200/important_locations -d '
 }' | python -m json.tool
 ```
 
-# Start all processors.
-<screenshot here>
+* Start all processors:
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/AllProcessorsRunningForTailFileSSh.JPG?raw=true)
+
 
 
 # For the Bitcoin demo:
