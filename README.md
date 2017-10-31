@@ -272,7 +272,7 @@ Current
 
 * And you should see something like:
 
-![]()
+![](https://github.com/willie-engelbrecht/FreeBeer24/blob/master/images/GrafanaBitcoinPrices.JPG?raw=true)
 
 
 ---
